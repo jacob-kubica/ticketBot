@@ -34,9 +34,20 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { IntroductionComponent } from './introduction/introduction.component';
+import { ModifiersComponent } from './modifiers/modifiers.component';
+import { SolutionsComponent } from './solutions/solutions.component';
+import { ResponsesComponent } from './responses/responses.component';
+import { ParserComponent } from './parser/parser.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IntroductionComponent,
+    ModifiersComponent,
+    SolutionsComponent,
+    ResponsesComponent,
+    ParserComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +56,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatCheckboxModule,
     MatInputModule,
     MatAutocompleteModule,
     MatDatepickerModule,
